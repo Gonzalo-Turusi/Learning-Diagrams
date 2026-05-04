@@ -1,0 +1,616 @@
+<mxfile host="app.diagrams.net" pages="3">
+  <diagram name="Documentation flow" id="rNhHMSc93nBmwY2FcY0d">
+    <mxGraphModel dx="1251" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-46" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4 1 4;fillColor=none;gradientColor=#ffa500;strokeColor=#D79B00;" value="" vertex="1">
+          <mxGeometry height="335" width="510" x="800" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;gradientColor=#7ea6e0;strokeColor=#6c8ebf;dashed=1;dashPattern=8 4 1 4;" value="" vertex="1">
+          <mxGeometry height="160" width="460" x="160" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeColor=#82b366;gradientColor=#97d077;dashPattern=8 4 1 4;" value="" vertex="1">
+          <mxGeometry height="240" width="460" x="160" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;b&gt;Client&lt;/b&gt;&lt;br&gt;(Tenant N)" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-7" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;Blob Storage&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="250" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-8" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;DB*&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="500" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" value="&lt;b&gt;Entra ID&lt;/b&gt;&lt;br&gt;&lt;i&gt;Auth + tenant resolution&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="130" x="330" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;b&gt;Key Vault&lt;/b&gt;&lt;br&gt;&lt;i&gt;Secrets, tenant config&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" value="&lt;b&gt;APIM&lt;/b&gt;&lt;br&gt;&lt;i&gt;Gateway, rate limiting&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;b&gt;Document Ingestion&lt;/b&gt;&lt;br&gt;&lt;i&gt;Validate, store to blob, publish message&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="224" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;b&gt;Notification Module&lt;/b&gt;&lt;br&gt;&lt;i&gt;Email / InApp notification&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="440" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Modular Monolith - Azure App Service (.Net)" vertex="1">
+          <mxGeometry height="30" width="240" x="174" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-23" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-17" style="endArrow=classic;dashed=1;html=1;rounded=0;strokeColor=light-dark(#000000,#6C8EBF);endFill=1;strokeWidth=2;exitX=0.369;exitY=0.992;exitDx=0;exitDy=0;exitPerimeter=0;" target="48-8rRfII4qTbJ0b_MYv-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="294" y="510" as="sourcePoint" />
+            <mxPoint x="410" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-24" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-17" style="endArrow=classic;dashed=1;html=1;rounded=0;entryX=0.145;entryY=0;entryDx=0;entryDy=4.35;entryPerimeter=0;strokeColor=light-dark(#000000,#6C8EBF);startArrow=classic;startFill=1;endFill=1;strokeWidth=2;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="48-8rRfII4qTbJ0b_MYv-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="329" y="590" />
+              <mxPoint x="509" y="590" />
+            </Array>
+            <mxPoint x="390" y="560" as="sourcePoint" />
+            <mxPoint x="440" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Data Layer - Isolated per tenant" vertex="1">
+          <mxGeometry height="30" width="200" x="160" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;" value="&lt;b&gt;External Data Center Caller&lt;br&gt;&lt;/b&gt;&lt;i&gt;(Receive a Job ID)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="133" x="827" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;" value="&lt;b&gt;Status Checker&lt;/b&gt;&lt;br&gt;&lt;i&gt;(is job X done yet?)&lt;br&gt;Time Trigger&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="990" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-29" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;b&gt;External Data Center&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="940" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-31" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-27" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=50;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;strokeWidth=2;strokeColor=light-dark(#000000,#959595);" target="48-8rRfII4qTbJ0b_MYv-29" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="840" y="550" as="sourcePoint" />
+            <mxPoint x="890" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-32" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-29" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=50;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#959595);strokeWidth=2;" target="48-8rRfII4qTbJ0b_MYv-28" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="840" y="540" as="sourcePoint" />
+            <mxPoint x="890" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-33" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-8" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;exitX=0.855;exitY=0;exitDx=0;exitDy=4.35;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#6C8EBF);endFill=0;startArrow=classic;startFill=1;" target="48-8rRfII4qTbJ0b_MYv-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600" y="510" as="sourcePoint" />
+            <mxPoint x="650" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-34" connectable="0" parent="48-8rRfII4qTbJ0b_MYv-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="JOB ID +&lt;br&gt;status &quot;Pending&quot;" vertex="1">
+          <mxGeometry relative="1" x="0.1352" y="5" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;" value="&lt;b&gt;Package builder&lt;/b&gt;&lt;br&gt;&lt;i&gt;Assemble output&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="130" x="1155" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="&lt;b&gt;Service bus&lt;br&gt;Queue&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1160" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-39" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-28" style="endArrow=classic;dashed=1;html=1;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;strokeColor=light-dark(#000000,#D7817E);" target="48-8rRfII4qTbJ0b_MYv-38" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1140" y="440" as="sourcePoint" />
+            <mxPoint x="1190" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="&lt;b&gt;Service bus&lt;br&gt;Queue&lt;/b&gt;&lt;br&gt;&lt;i&gt;SessionID = tenantId&lt;/i&gt;" vertex="1">
+          <mxGeometry height="70" width="130" x="650" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-43" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-36" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;startArrow=classic;startFill=1;strokeColor=light-dark(#000000,#D79B00);" target="48-8rRfII4qTbJ0b_MYv-38" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1080" y="390" as="sourcePoint" />
+            <mxPoint x="1130" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-44" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-17" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endFill=1;strokeColor=light-dark(#000000,#D7817E);strokeWidth=2;" target="48-8rRfII4qTbJ0b_MYv-41" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="465" />
+              <mxPoint x="400" y="340" />
+              <mxPoint x="683" y="340" />
+            </Array>
+            <mxPoint x="580" y="440" as="sourcePoint" />
+            <mxPoint x="630" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-45" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-41" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;strokeColor=light-dark(#000000,#D79B00);strokeWidth=2;" target="48-8rRfII4qTbJ0b_MYv-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="810" y="410" as="sourcePoint" />
+            <mxPoint x="860" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Azure Functions - async processing pipeline" vertex="1">
+          <mxGeometry height="30" width="240" x="827" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-49" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="48-8rRfII4qTbJ0b_MYv-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="430" y="220" as="sourcePoint" />
+            <mxPoint x="330" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-52" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-2" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" target="48-8rRfII4qTbJ0b_MYv-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="240" as="sourcePoint" />
+            <mxPoint x="490" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-53" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-15" style="endArrow=classic;dashed=1;html=1;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;strokeColor=light-dark(#000000,#46A8AF);" target="48-8rRfII4qTbJ0b_MYv-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="240" as="sourcePoint" />
+            <mxPoint x="330" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-54" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-15" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endFill=1;strokeColor=light-dark(#000000,#446E2C);strokeWidth=2;" target="48-8rRfII4qTbJ0b_MYv-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="270" as="sourcePoint" />
+            <mxPoint x="520" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-55" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-18" style="endArrow=classic;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;endFill=1;strokeColor=light-dark(#000000,#9577A3);strokeWidth=2;" target="48-8rRfII4qTbJ0b_MYv-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="320" as="sourcePoint" />
+            <mxPoint x="600" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-57" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-28" style="endArrow=classic;dashed=1;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=15;entryPerimeter=0;exitX=0;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;endFill=1;strokeColor=light-dark(#000000,#6C8EBF);startArrow=classic;startFill=1;" target="48-8rRfII4qTbJ0b_MYv-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="810" y="590" as="sourcePoint" />
+            <mxPoint x="860" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-58" connectable="0" parent="48-8rRfII4qTbJ0b_MYv-57" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="JOB ID +&amp;nbsp;&lt;br&gt;Status" vertex="1">
+          <mxGeometry relative="1" x="0.1487" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-60" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-46" style="endArrow=classic;dashed=1;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.091;exitDx=0;exitDy=0;endFill=1;strokeColor=light-dark(#000000,#9577A3);strokeWidth=2;exitPerimeter=0;" target="48-8rRfII4qTbJ0b_MYv-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="380" as="sourcePoint" />
+            <mxPoint x="715" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-62" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-36" style="endArrow=classic;dashed=1;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;strokeWidth=2;endFill=1;strokeColor=light-dark(#000000,#6C8EBF);startArrow=none;startFill=0;" target="48-8rRfII4qTbJ0b_MYv-25" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1300" y="570" as="sourcePoint" />
+            <mxPoint x="810" y="805" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-64" connectable="0" parent="48-8rRfII4qTbJ0b_MYv-62" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Processed Output" vertex="1">
+          <mxGeometry relative="1" x="0.191" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-66" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;b&gt;App Insight&lt;/b&gt;&lt;br&gt;&lt;i&gt;All components emit telemetry&amp;nbsp;&lt;/i&gt;tagged by tenantId&lt;i&gt;&lt;br&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="720" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-68" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;" value="&lt;b&gt;Notification dispatcher&lt;br&gt;&lt;/b&gt;&lt;i&gt;Generates a new notification&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="1150" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-69" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-36" style="endArrow=classic;dashed=1;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endFill=1;strokeWidth=2;strokeColor=light-dark(#000000,#996500);" target="48-8rRfII4qTbJ0b_MYv-68" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="890" y="680" as="sourcePoint" />
+            <mxPoint x="940" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-71" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-19" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=light-dark(#000000,#6C8EBF);endFill=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" target="48-8rRfII4qTbJ0b_MYv-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="515" y="560" />
+              <mxPoint x="530" y="560" />
+            </Array>
+            <mxPoint x="290" y="580" as="sourcePoint" />
+            <mxPoint x="299" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;b&gt;Output renderer&lt;/b&gt;&lt;br&gt;&lt;i&gt;Tenant template + user pref&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="440" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-73" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-68" style="endArrow=classic;dashed=1;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;endFill=1;strokeColor=light-dark(#000000,#6C8EBF);startArrow=none;startFill=0;entryPerimeter=0;" target="48-8rRfII4qTbJ0b_MYv-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1345" y="640" as="sourcePoint" />
+            <mxPoint x="800" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-74" connectable="0" parent="48-8rRfII4qTbJ0b_MYv-73" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="New Notification" vertex="1">
+          <mxGeometry relative="1" x="0.191" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48-8rRfII4qTbJ0b_MYv-76" edge="1" parent="1" source="48-8rRfII4qTbJ0b_MYv-72" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;strokeColor=light-dark(#000000,#6C8EBF);endFill=1;strokeWidth=2;startArrow=classic;startFill=1;entryX=0.713;entryY=0.047;entryDx=0;entryDy=0;entryPerimeter=0;" target="48-8rRfII4qTbJ0b_MYv-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="405" />
+              <mxPoint x="610" y="570" />
+              <mxPoint x="550" y="570" />
+            </Array>
+            <mxPoint x="560" y="570" as="sourcePoint" />
+            <mxPoint x="575" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lIsNepdnBAUAu_AT9RLy-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;b&gt;Tenant Context&lt;/b&gt;&lt;br&gt;&lt;i&gt;Resolve + inject tenantId&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="219" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="jNFN7KJj7yrHW0cX2_W_-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Steps&lt;/h1&gt;&lt;p&gt;This was my process when approaching this design:&lt;br&gt;&lt;br&gt;1. Recall the meeting (&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;I was unable to obtain the meeting transcript)&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;, the flow and the needs discussed &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;and write it down.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2. Define essential vs optional Azure services based on&lt;br&gt;   the required flows.&lt;br&gt;&lt;br&gt;3. Choose architecture style based on flow complexity, technologies, SLA, and other factors.&lt;br&gt;   Decision: modular monolith + Azure Functions for async ops.&lt;br&gt;&lt;br&gt;4. Define which strategy to use for a multi-tenant&lt;br&gt;  application.&amp;nbsp;(see Multi-Tenancy diagram)&lt;br&gt;   Decision: shared app tier, isolated database per tenant.&lt;br&gt;&lt;br&gt;5. Choose the database engine based on isolation model,&lt;br&gt;   access patterns and schema flexibility needs.&lt;br&gt;   Decision: pending — see DB* note inside diagram.&lt;br&gt;&lt;br&gt;6. First architectural diagram&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;and document&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;  the assumptions being made.&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="370" width="390" x="1380" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="jNFN7KJj7yrHW0cX2_W_-2" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Flow&lt;/h1&gt;&lt;p&gt;Remembered flow (interview notes)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Client → uploads documentation&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ sent to external data center&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ response received from data center&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ generate a package of files&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ format and present output to the user&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Implemented as:&lt;/p&gt;&lt;p&gt;1. Client&lt;/p&gt;&lt;p&gt;2. APIM&lt;/p&gt;&lt;p&gt;3. Entra ID (auth + tenant resolution)&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4. Tenant Context (inject tenantId)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;5. Document Ingestion (validate, store to Blob,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;publish message)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6. Service Bus (sessionID = tenantId)&lt;/p&gt;&lt;p&gt;7. External DC Caller (submit, receive jobId)&lt;br&gt;&lt;/p&gt;&lt;p&gt;8. External Data Center process&lt;/p&gt;&lt;p&gt;9. DB* (write JobId + status &quot;Pending&quot;)&lt;/p&gt;&lt;p&gt;10. Status Checker (timer trigger, poll DC)&lt;/p&gt;&lt;p&gt;11. DB* (update jobId + Status)&lt;/p&gt;&lt;p&gt;12. External Data center check status&lt;/p&gt;&lt;p&gt;13. Service Bus (trigger package builder)&lt;/p&gt;&lt;p&gt;14. Package Builder (assemble output)&lt;/p&gt;&lt;p&gt;15. DB* / Blob (write Processed Output)&lt;/p&gt;&lt;p&gt;16. Notification Dispatcher (write New Notification)&lt;/p&gt;&lt;p&gt;17. DB* (notification record)&lt;/p&gt;&lt;p&gt;18. Notification Module reads on user request&lt;/p&gt;&lt;p&gt;19. Output Renderer reads on user request&lt;/p&gt;" vertex="1">
+          <mxGeometry height="820" width="470" x="1380" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="jNFN7KJj7yrHW0cX2_W_-3" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Assumptions&lt;/h1&gt;&lt;p&gt;I took the liberty of making these assumptions with the sole purpose of showing a complete flow and demonstrating my way of working:&lt;br&gt;&lt;br&gt;1. Flow and scope&lt;br&gt;   Document processing and tenant onboarding are the two flows in scope.&lt;br&gt;&lt;br&gt;2. Async processing / SLA&lt;br&gt;   The external data center has unknown and potentially long response times.&lt;br&gt;The flow is async by design.&lt;br&gt;   The client submits documents and receives a notification (email or in-app) when processing completes.&lt;br&gt;   No processing time SLA is defined.&lt;br&gt;   A polling pattern is used. the Status Checker runs on a timer trigger and asks the DC if the job is done.&lt;br&gt;&lt;br&gt;3. External data center&lt;br&gt;   Assumed to be a single shared REST API endpoint for all tenants. Each job returns a jobId on submission and exposes a status endpoint to check completion.&lt;br&gt;   If tenants have individual endpoints or credentials, per-tenant secrets in Key Vault accommodate this without architectural changes.&lt;br&gt;&lt;br&gt;4. Output package&lt;br&gt;   It is unknown whether the external DC response produces a file package (stored in Blob) or structured data (persisted to DB*). The diagram models the boundary only.&lt;br&gt;   Final model depends on the external DC response format.&lt;br&gt;&lt;br&gt;5. Formatting and views&lt;br&gt;   Output presentation is tenant-configurable with a default view. Users may override the tenant default. View templates are stored per-tenant in DB*.&lt;br&gt;   Output is rendered inside the application on demand, no push to external systems assumed.&lt;br&gt;&lt;br&gt;6. Notification delivery&lt;br&gt;   The Notification Dispatcher (async pipeline) writes the notification record to DB*.&lt;br&gt;   The Notification Module (monolith) reads and serves it when the user requests it.&lt;br&gt;   No real-time push (SignalR) is required at this stage.&lt;br&gt;&lt;br&gt;7. Document volume&lt;br&gt;   Volume per tenant is assumed moderate. No chunked upload, streaming processing or parallel worker scaling is required at this stage.&lt;br&gt;&lt;br&gt;8. Availability&lt;br&gt;   Single geographic region. Availability target applies to business hours in that region. No 24/7 or&lt;br&gt;   multi-region requirement is assumed.&lt;br&gt;&lt;br&gt;9. Compliance&lt;br&gt;   Data residency, GDPR and industry-specific compliance are not addressed in this version. The architecture does not preclude adding them, isolated databases and Key Vault are compatible with most compliance frameworks.&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="750" width="520" x="1890" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="jNFN7KJj7yrHW0cX2_W_-4" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Notes&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;DB*&lt;/b&gt;&lt;/font&gt;&lt;br&gt;The database engine has not been defined yet.&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;This decision depends on information not available&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;at this stage.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Two candidates:&lt;/p&gt;&lt;p&gt;&lt;u&gt;&lt;b&gt;Azure Cosmos DB&lt;/b&gt;&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; + Flexible schema — each tenant can have different&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;document structures without migrations.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; + Native per-tenant database isolation.&lt;/p&gt;&lt;p&gt;&amp;nbsp; + Document-oriented model fits the output&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;package well&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; - Higher cost at low volume&lt;/p&gt;&lt;p&gt;&amp;nbsp; - Eventual consistency requires careful design&lt;/p&gt;&lt;p&gt;&amp;nbsp; - Different query model from SQL -&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;team learning curve&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;u&gt;Azure SQL&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; + Familiar to most .NET teams&lt;/p&gt;&lt;p&gt;&amp;nbsp; + Strong consistency and mature tooling&lt;/p&gt;&lt;p&gt;&amp;nbsp; + Lower cost at moderate volume&lt;/p&gt;&lt;p&gt;&amp;nbsp; - Schema changes across tenant databases require&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;coordinated migrations&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; - Less flexible if tenant document structures&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;diverge significantly&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;u&gt;Decision drivers&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; → How structurally different are tenant schemas?&lt;/p&gt;&lt;p&gt;&amp;nbsp; → What are the query patterns on processed output?&lt;/p&gt;&lt;p&gt;&amp;nbsp; → What is the team&#39;s existing experience&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;with SQL vs NoSQL?&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Note: both options are compatible with the&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;isolated data tier model. This decision does not&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;affect the overall architecture, only the&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;implementation of the data layer.&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="720" width="510" x="1890" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="990" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="References:" vertex="1">
+          <mxGeometry height="30" width="60" x="960" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Identity / Ingress" vertex="1">
+          <mxGeometry height="30" width="100" x="1050" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="990" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="990" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="990" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="990" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="990" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Secrets / Logs" vertex="1">
+          <mxGeometry height="30" width="90" x="1050" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Service bus queues" vertex="1">
+          <mxGeometry height="30" width="110" x="1050" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Async pipeline" vertex="1">
+          <mxGeometry height="30" width="90" x="1050" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Monolith components" vertex="1">
+          <mxGeometry height="30" width="120" x="1050" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="clMeWjgdrVV1SJ5eQIS_-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Data layer" vertex="1">
+          <mxGeometry height="30" width="60" x="1050" y="175" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="O4ay9d97NT0CVC44l__C" name="Multi tenancy">
+    <mxGraphModel dx="724" dy="486" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;b&gt;Tenant A users&lt;/b&gt;&lt;br&gt;&lt;i&gt;Company A employees&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="130" x="120" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;b&gt;Tenant B users&lt;/b&gt;&lt;br&gt;&lt;i&gt;Company B employees&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="130" x="350" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;b&gt;Tenant C users&lt;/b&gt;&lt;br&gt;&lt;i&gt;Company C employees&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="130" x="580" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;gradientColor=#97d077;strokeColor=#82b366;dashed=1;dashPattern=8 4 1 4;" value="" vertex="1">
+          <mxGeometry height="160" width="490" x="170" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Shared app tier - One deployment, all tenants" vertex="1">
+          <mxGeometry height="30" width="260" x="180" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;b&gt;Entra ID + APIM&lt;/b&gt;&lt;div&gt;&lt;i&gt;Auth + resolve TenantId&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="220" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;b&gt;Tenant Context&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;i&gt;Scope all data access&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="470" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-8" edge="1" parent="1" source="RG1MbGFf5ctaDujEfwZt-6" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;strokeWidth=2;strokeColor=light-dark(#000000,#446E2C);" target="RG1MbGFf5ctaDujEfwZt-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="380" as="sourcePoint" />
+            <mxPoint x="440" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;gradientColor=#7ea6e0;strokeColor=#6c8ebf;dashed=1;dashPattern=8 4 1 4;" value="" vertex="1">
+          <mxGeometry height="240" width="140" x="150" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-10" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;DB&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="190" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-11" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;Blob container&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="190" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Tenant A" vertex="1">
+          <mxGeometry height="30" width="60" x="190" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;gradientColor=#7ea6e0;strokeColor=#6c8ebf;dashed=1;dashPattern=8 4 1 4;" value="" vertex="1">
+          <mxGeometry height="240" width="140" x="350" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-14" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;DB&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="390" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-15" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;Blob container&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="390" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Tenant B" vertex="1">
+          <mxGeometry height="30" width="60" x="390" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;gradientColor=#7ea6e0;strokeColor=#6c8ebf;dashed=1;dashPattern=8 4 1 4;" value="" vertex="1">
+          <mxGeometry height="240" width="140" x="550" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-18" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;DB&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="590" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-19" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;Blob container&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="590" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Tenant C" vertex="1">
+          <mxGeometry height="30" width="60" x="590" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-22" edge="1" parent="1" source="RG1MbGFf5ctaDujEfwZt-12" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;strokeWidth=2;strokeColor=light-dark(#000000,#5C79A3);" target="RG1MbGFf5ctaDujEfwZt-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="440" />
+            </Array>
+            <mxPoint x="370" y="480" as="sourcePoint" />
+            <mxPoint x="420" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Isolated per tenant - Each gets their own database and storage container" vertex="1">
+          <mxGeometry height="30" width="460" x="190" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-23" edge="1" parent="1" source="RG1MbGFf5ctaDujEfwZt-16" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;strokeWidth=2;strokeColor=light-dark(#000000,#5C79A3);" target="RG1MbGFf5ctaDujEfwZt-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="400" y="540" as="sourcePoint" />
+            <mxPoint x="595" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-24" edge="1" parent="1" source="RG1MbGFf5ctaDujEfwZt-20" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;strokeWidth=2;strokeColor=light-dark(#000000,#5C79A3);" target="RG1MbGFf5ctaDujEfwZt-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="440" />
+            </Array>
+            <mxPoint x="550" y="570" as="sourcePoint" />
+            <mxPoint x="745" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-25" edge="1" parent="1" source="RG1MbGFf5ctaDujEfwZt-1" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;endFill=1;" target="RG1MbGFf5ctaDujEfwZt-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="360" as="sourcePoint" />
+            <mxPoint x="410" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-26" edge="1" parent="1" source="RG1MbGFf5ctaDujEfwZt-2" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.91;entryY=0.022;entryDx=0;entryDy=0;strokeWidth=2;endFill=1;entryPerimeter=0;" target="RG1MbGFf5ctaDujEfwZt-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="250" as="sourcePoint" />
+            <mxPoint x="475" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RG1MbGFf5ctaDujEfwZt-27" edge="1" parent="1" source="RG1MbGFf5ctaDujEfwZt-3" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;endFill=1;" target="RG1MbGFf5ctaDujEfwZt-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="220" as="sourcePoint" />
+            <mxPoint x="685" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T3f86uUT3vMoaRhENrFR-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Steps&lt;/h1&gt;&lt;p&gt;Design decisions - multi-tenancy model:&lt;/p&gt;&lt;p&gt;1. Define who a tenant is.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Decision: a tenant is a company (B2B).&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Each tenant has multiple users (employees).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2. Choose the isolation model.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Options considered:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Silo: fully isolated infrastructure per tenant&lt;/li&gt;&lt;li&gt;Pool: shared everything, tenantId row filter&lt;/li&gt;&lt;li&gt;Bridge: shared app, isolated data&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Decision: bridge model.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Shared app tier for cost efficiency.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Isolated database and Blob container per tenant&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;for security, compliance-readiness and clean&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;offboarding.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;3. Define how tenant identity is resolved at runtime.&lt;/p&gt;&lt;p&gt;Decision: Entra ID issues a JWT token containing&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;the tenantId claim. APIM validates the token.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;The Tenant Context module reads the claim and scopes&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;all downstream data access to that tenant.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;4. Define where per-tenant secrets and config live.&lt;/p&gt;&lt;p&gt;Decision: Azure Key Vault holds per-tenant&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;connection strings, external DC credentials&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;and feature flags.&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="590" width="373" x="827" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="T3f86uUT3vMoaRhENrFR-2" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Assumptions&lt;/h1&gt;&lt;p&gt;1. Tenant definition&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Each tenant represents a company with multiple users.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;User authentication and tenant resolution are both&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;required on every request.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;All data access is scoped to the resolved tenant.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;2. Isolation scope&lt;/p&gt;&lt;p&gt;Each tenant gets their own database&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;and their own Blob Storage container.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Isolation is enforced at the storage level&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;not only in application logic.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;A misconfigured query cannot reach another&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;tenant&#39;s data by design.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;3. Storage account&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Tenants share one Storage Account but have&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;separate containers. Full Storage Account per tenant&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;is not required at this stage.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;4. Noisy neighbor&lt;/p&gt;&lt;p&gt;No per-tenant throughput guarantees are defined&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;at this stage. Service Bus session-based processing&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(sessionId = tenantId) provides ordering isolation.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Throughput tiers can be introduced later if needed.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;5. Access model&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;This is a controlled-access B2B application.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;No open or anonymous registration is assumed.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Access is granted per company by an administrator.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;6. Offboarding&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Isolated databases and containers make tenant&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;offboarding clean. Delete the database, delete&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;the container, remove Key Vault secrets.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Offboarding design is deferred but the architecture&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;supports it without structural changes.&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="710" width="370" x="1250" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="T3f86uUT3vMoaRhENrFR-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;b&gt;Key Vault&lt;br&gt;&lt;/b&gt;&lt;i&gt;Secrets per-tenant&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="175" x="332.5" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="T3f86uUT3vMoaRhENrFR-4" edge="1" parent="1" source="RG1MbGFf5ctaDujEfwZt-9" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=1;strokeColor=light-dark(#000000,#9577A3);strokeWidth=2;" target="T3f86uUT3vMoaRhENrFR-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="740" as="sourcePoint" />
+            <mxPoint x="470" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T3f86uUT3vMoaRhENrFR-5" edge="1" parent="1" source="T3f86uUT3vMoaRhENrFR-3" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endFill=0;startArrow=classic;startFill=1;strokeColor=light-dark(#000000,#9577A3);strokeWidth=2;" target="RG1MbGFf5ctaDujEfwZt-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="740" as="sourcePoint" />
+            <mxPoint x="470" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T3f86uUT3vMoaRhENrFR-6" edge="1" parent="1" source="T3f86uUT3vMoaRhENrFR-3" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endFill=0;startArrow=classic;startFill=1;strokeColor=light-dark(#000000,#9577A3);strokeWidth=2;" target="RG1MbGFf5ctaDujEfwZt-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="740" as="sourcePoint" />
+            <mxPoint x="470" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kx8qWcYF5ekzFVOqTByy-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="640" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="Kx8qWcYF5ekzFVOqTByy-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="References:" vertex="1">
+          <mxGeometry height="30" width="60" x="610" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="Kx8qWcYF5ekzFVOqTByy-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Tenants" vertex="1">
+          <mxGeometry height="30" width="100" x="700" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="Kx8qWcYF5ekzFVOqTByy-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="640" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="Kx8qWcYF5ekzFVOqTByy-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="640" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="Kx8qWcYF5ekzFVOqTByy-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="640" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="Kx8qWcYF5ekzFVOqTByy-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Secrets" vertex="1">
+          <mxGeometry height="30" width="90" x="700" y="875" as="geometry" />
+        </mxCell>
+        <mxCell id="Kx8qWcYF5ekzFVOqTByy-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Shared services" vertex="1">
+          <mxGeometry height="30" width="120" x="700" y="905" as="geometry" />
+        </mxCell>
+        <mxCell id="Kx8qWcYF5ekzFVOqTByy-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Isolated services" vertex="1">
+          <mxGeometry height="30" width="100" x="700" y="935" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="6IYzaP2HU_S-dcHgJ8zu" name="Onboarding process">
+    <mxGraphModel dx="1529" dy="1027" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;b&gt;Admin Request&lt;/b&gt;&lt;br&gt;&lt;i&gt;New tenant&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="185" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;" value="&lt;b&gt;Onboarding Module&lt;/b&gt;&lt;br&gt;&lt;i&gt;Funtion App&lt;br&gt;HTTP Trigger&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="185" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ul&gt;&lt;li&gt;Validate&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Create tenant record&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Publish to Service bus&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="70" width="180" x="295" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="&lt;b&gt;Service bus&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="185" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;" value="&lt;b&gt;Provisioning orchestrator&lt;/b&gt;&lt;div&gt;&lt;i&gt;Durable function&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="170" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" value="&lt;b&gt;Activity 1&lt;/b&gt;&lt;div&gt;&lt;i&gt;ARM deployment (Bicep)&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="385" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" value="&lt;b&gt;Activity 2&lt;/b&gt;&lt;div&gt;&lt;i&gt;Config seeding&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="385" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" value="&lt;b&gt;Activity 3&lt;/b&gt;&lt;div&gt;&lt;i&gt;Smoke tests&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="385" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-9" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" value="&lt;b&gt;Passed?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="405" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="&lt;b&gt;Status = Active +&lt;br&gt;notify Admin&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="475" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="&lt;b&gt;Status = Failed +&lt;br&gt;Alert + log&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="305" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-12" edge="1" parent="1" source="fmm7EWudAX6SW3fW2CHc-1" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=1;strokeWidth=2;" target="fmm7EWudAX6SW3fW2CHc-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="225" y="320" as="sourcePoint" />
+            <mxPoint x="275" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-13" edge="1" parent="1" source="fmm7EWudAX6SW3fW2CHc-2" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=1;strokeWidth=2;" target="fmm7EWudAX6SW3fW2CHc-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="265" y="240" as="sourcePoint" />
+            <mxPoint x="265" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-14" edge="1" parent="1" source="fmm7EWudAX6SW3fW2CHc-4" style="endArrow=classic;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=1;strokeWidth=2;" target="fmm7EWudAX6SW3fW2CHc-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="285" y="330" as="sourcePoint" />
+            <mxPoint x="285" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-16" edge="1" parent="1" source="fmm7EWudAX6SW3fW2CHc-5" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="fmm7EWudAX6SW3fW2CHc-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="325" y="440" as="sourcePoint" />
+            <mxPoint x="405" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-17" edge="1" parent="1" source="fmm7EWudAX6SW3fW2CHc-5" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=1;strokeWidth=2;" target="fmm7EWudAX6SW3fW2CHc-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425" y="460" as="sourcePoint" />
+            <mxPoint x="425" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-18" edge="1" parent="1" source="fmm7EWudAX6SW3fW2CHc-8" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=1;strokeWidth=2;" target="fmm7EWudAX6SW3fW2CHc-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="575" y="590" as="sourcePoint" />
+            <mxPoint x="575" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-19" edge="1" parent="1" source="fmm7EWudAX6SW3fW2CHc-9" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=1;strokeWidth=2;" target="fmm7EWudAX6SW3fW2CHc-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="545" y="680" as="sourcePoint" />
+            <mxPoint x="545" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-21" connectable="0" parent="fmm7EWudAX6SW3fW2CHc-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;b&gt;Yes&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1081" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-20" edge="1" parent="1" source="fmm7EWudAX6SW3fW2CHc-9" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=1;strokeWidth=2;" target="fmm7EWudAX6SW3fW2CHc-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="585" y="690" as="sourcePoint" />
+            <mxPoint x="585" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fmm7EWudAX6SW3fW2CHc-22" connectable="0" parent="fmm7EWudAX6SW3fW2CHc-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;b&gt;No&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.088" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GV9jLIKH-vTIU0H_NICj-1" edge="1" parent="1" source="fmm7EWudAX6SW3fW2CHc-5" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fmm7EWudAX6SW3fW2CHc-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="295" y="400" as="sourcePoint" />
+            <mxPoint x="345" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pbUgGGDXGgZMIDwznu1W-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Steps&lt;/h1&gt;&lt;p&gt;Design decisions for tenant onboarding flow:&lt;/p&gt;&lt;p&gt;1. Define what onboarding means technically.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Decision: onboarding is the automated provisioning&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;of all Azure resources a new tenant needs before&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;their first user can log in.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;2. Decide where the onboarding entry point lives.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Options considered:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp;· Inside the monolith as a module&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp;· As a standalone Function App&lt;/p&gt;&lt;p&gt;Decision: standalone HTTP-triggered Function App.&lt;/p&gt;&lt;p&gt;Reasoning: tenant management may grow its own&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;surface. External admin portal, self-service signup,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;partner API. Keeping it outside the monolith avoids&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;coupling and supports those future entry points&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;without architectural changes.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;3. Decide whether to use Durable Functions here.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Decision: yes, for the provisioning pipeline only.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Reasoning: provisioning is a multi-step sequential&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;workflow where each step depends on the previous.&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Durable Functions provide checkpointing and per-step&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;retry without custom state management.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;4. Define the success criteria for onboarding.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Decision: smoke tests must pass before the tenant&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;is marked active. A failed provisioning alerts&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;the admin and logs to App Insights.&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="630" width="380" x="700" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EtP3NJek3bLHR7jHKAby-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Flow&lt;/h1&gt;&lt;p&gt;Admin request (new tenant)&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; → Onboarding Module (Function App, HTTP Trigger)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Validate request&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Create tenant record in DB* (status: provisioning)&lt;/li&gt;&lt;li&gt;Publish message to Service Bus&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; → Service Bus&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; → Provisioning Orchestrator (Durable Function)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activity 1 — ARM deployment (Bicep)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;p&gt;Deploy Cosmos DB database, Blob container,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Key Vault secrets, Entra ID registration.&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activity 2 — Config seeding&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;p&gt;Default view templates, feature flags,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;user roles.&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activity 3 — Smoke tests&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;p&gt;Upload test document, verify full flow,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;confirm tenant environment is healthy.&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; → Passed?&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;YES → status = Active, notify admin&lt;/li&gt;&lt;li&gt;NO&amp;nbsp; → status = Failed, alert + log to App Insights&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Target: full automated pipeline completes at most in an hour.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="520" width="380" x="1160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EtP3NJek3bLHR7jHKAby-2" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Assumptions&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Entry point&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The diagram shows an admin request as the trigger.&lt;/p&gt;&lt;p&gt;The actual caller is unknown. Could be an internal&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;admin portal, a self-service signup form, or a&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;partner API. The Function App HTTP trigger&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;accommodates all of these without changes.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;2. Activity sequencing&lt;/p&gt;&lt;p&gt;Activities 1, 2 and 3 are sequential, not parallel.&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ARM deployment must complete before config seeding&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;since the resources do not exist yet.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Config seeding must complete before smoke tests&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;since templates and flags must be in place first.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;3. Failure handling&lt;/p&gt;&lt;p&gt;A failed activity alerts the admin and logs to&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;App Insights. Manual intervention is required&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;to diagnose and re-trigger provisioning.&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;Automated remediation is out of scope at this stage.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;6. Offboarding&lt;/p&gt;&lt;p&gt;Tenant offboarding (resource teardown, data deletion,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;GDPR obligations) is not covered in this diagram.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;It is a deferred concern but the isolated architecture&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;supports it cleanly.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;7. Timeline&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;The automated pipeline (ARM deploy, seed, smoke tests)&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;completes in under 30 minutes under normal conditions.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;T&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;he 1–2 week client acquisition target accounts for&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;human steps outside this pipeline.&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="630" width="420" x="1160" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="References:" vertex="1">
+          <mxGeometry height="30" width="60" x="590" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="620" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="620" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="620" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="620" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" value="" vertex="1">
+          <mxGeometry height="20" width="50" x="620" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Activities" vertex="1">
+          <mxGeometry height="30" width="90" x="680" y="925" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Fail" vertex="1">
+          <mxGeometry height="30" width="110" x="680" y="985" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Azure functions" vertex="1">
+          <mxGeometry height="30" width="90" x="680" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Sucess" vertex="1">
+          <mxGeometry height="30" width="120" x="680" y="955" as="geometry" />
+        </mxCell>
+        <mxCell id="LIRTY_oAdHwwFIyisLms-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Service bus" vertex="1">
+          <mxGeometry height="30" width="70" x="680" y="895" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
